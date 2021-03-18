@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../static/css/estilos.css" th:href="@{/css/estilos.css}"/>
+</head>
+<body>
+<form method= "post"  action="/guardar">
+
+<p> Nombre: <input type="text" name="nombre" ></p>
+
+<p> Asunto: <input type="text" name="asunto" ></p>
+
+<p> Anuncio: <textarea name="comentario" rows=4 cols=40></textarea></p>
+
+<p> Enviar: <input type="submit" value="send" /></p>
+
+</form>
+</body>
+</html>
