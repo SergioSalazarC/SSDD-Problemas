@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org>">
+<head>
+<meta charset="ISO-8859-1">
+<title>Tablon anuncios</title>
+</head>
+<body>
+	<form method= "post"  action="/">		
+		<p> Nombre: <input type="text" name="nombre" ></p>
+		
+		<p> Asunto: <input type="text" name="asunto" ></p>
+		
+		<p> Anuncio: <textarea name="comentario" rows=4 cols=40></textarea></p>
+		
+		<p> Enviar: <input type="submit" name="enviar" value="send" /></p>	
+	</form>
+
+	<p th:each="anuncio : ${anuncios}">
+		<span th:text="'Nombre: '+${anuncio.nombre}"></span></br>		
+		<span th:text="'Asunto: '+${anuncio.asunto}"></span></br>		
+		<span th:text="'Anuncio: '+${anuncio.comentario}"></span></br>
+	</p>
+
+</body>
+</html>
