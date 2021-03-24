@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org>">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>
+			    <span th:text="'Nombre: '+ ${anuncio.nombre}" /><br/>
+			    <span th:text="'Asunto: '+ ${anuncio.asunto}" /><br/>
+			    <span th:text="'Mensaje: '+ ${anuncio.comentario}" /><br/>
+	    </p>
+	    
+	    <a href="/">
+	    	<p>Volver</p>
+	    </a>
+</body>
+</html>
