@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org>">
+<head>
+<meta charset="ISO-8859-1">
+<title>Tablon anuncios</title>
+</head>
+<body>
+
+	<p>Tablon de anuncios</p></br>
+
+	<p th:each="anuncio : ${anuncios}">
+		<a th:href= "@{/MostrarAnuncio(id = ${anuncio.id})}">
+		    <span th:text="'Nombre: '+ ${anuncio.nombre}" /><br/>
+		    <span th:text="'Asunto: '+ ${anuncio.asunto}" /><br/>
+		</a>
+	</p>
+	
+	<a href="enviarAnuncio.html"><p>Enviar Anuncio</p></a>
+	
+	
+
+</body>
+</html>
